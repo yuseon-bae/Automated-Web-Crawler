@@ -1,0 +1,24 @@
+﻿<Window x:Class="G2BwpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:G2BwpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="시작 날짜:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="startDateTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,14,0,0" Width="100"/>
+        <TextBox x:Name="endDateTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,48,0,0" Width="100"/>
+        <Label Content="종료 날짜:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <Button Content="데이터 가져오기" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="120" Click="FetchData_Click"/>
+
+        <Label Content="저장 경로:" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="saveLocationTextBox" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="300"/>
+        <Button Content="저장 경로 선택" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Width="100" Click="SelectSaveLocation_Click"/>
+
+        <Label Content="검색 결과:" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.432,-7.202"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="770" Height="200" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+
+    </Grid>
+</Window>
